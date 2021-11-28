@@ -1,5 +1,5 @@
 {
-  "name": "split-marketing",
+  "name": "balance-marketing",
   "private": true,
   "scripts": {
     "dev": "next dev",

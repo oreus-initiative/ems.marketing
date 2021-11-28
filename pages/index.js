@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -11,59 +10,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <div>
+        <h1>Split</h1>
+        <p>Free apps mostly rely on monetisation methods worsening user experience. We’re here to solve that problem by building a tool for developers to reward their users using EOS.</p>
+        <p>While building our budget and expenses sharing app, one of our main goals was to reward our users for using our services. But traditional technologies take too big a chunk of the cake! That means less cake for our users! So here we are, building an EOS-Based reward system and API for developers and other generous organizations who wish to reward their users as much as we do.</p>
+        <p>Our open-source solution would include two parts to make the system easily integrable and usable;</p>
+        <h2>API</h2>
+        <p>The API allows you to configure and retrieve analytics from your reward system using your favorite language. You’ll be able, using code, to import users, manage rewards, how much and when you would like to distribute the cake.</p>
+        <h2>Smart-Contract</h2>
+        <p>The smart-contract automates the transfers between your organization’s wallet and your users following your previous rewards configurations. Smart-contract transactions are 100% transparent and accessible by searching the blockchain’s transactions history so you can always prove your commitment to your community!</p>
+        <h2>Hosting &amp; Admin Interface</h2>
+        <p>If you do not have the technical knowledge or the desire to host this system yourself, we’re going to do it for you at a minimal fee (covering our expenses and R&D). While also providing an admin interface to configure everything directly in your web browser so that every member of your organization can easily manage it.</p>
+      </div>
     </div>
   )
 }
