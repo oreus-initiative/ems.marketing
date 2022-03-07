@@ -1,0 +1,90 @@
+@import "./mixins";
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Medium.ttf");
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Poppins, -apple-system, Roboto, sans-serif !important;
+  color: $gray_2 !important;
+}
+
+body {
+  position:fixed;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $secondary_1;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: $spacing_5;
+}
+
+.o_banner_img {
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+
+main {
+  padding-top: 75px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.o_container {
+  padding-top: 300px;
+}
+
+a {
+  color: $secondary_1;
+  text-decoration: none;
+}
+
+.o_section {
+  position: relative;
+  margin: $spacing_7 0;
+}
+
+.o_warning {
+  background-color: $danger_1;
+  h3 {
+    color: white;
+  }
+  color: white;
+  padding: $spacing_4;
+  margin: -$spacing_5 0 $spacing_7 0;
+  border-radius: 50px;
+}

@@ -1,0 +1,16 @@
+@import "../../mixins";
+
+.o_decorative_pill_outer {
+  position: relative;
+  width: $spacing_9;
+  height: $spacing_3;
+  border-radius: 99999px;
+  background-color: $secondary_1;
+  .o_decorative_pill_inner {
+    margin-left: -1px;
+    border-radius: 99999px;
+    width: 66%;
+    height: 100%;
+    background-color: $primary_1;
+  }
+}

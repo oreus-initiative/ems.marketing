@@ -1,0 +1,11 @@
+@import "../../mixins";
+
+.o_label_container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-items: flex-start;
+  .o_label_icon_container {
+    width: 24px;
+    color: $secondary_1;
+  }
+}

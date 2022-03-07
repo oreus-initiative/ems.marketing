@@ -1,0 +1,17 @@
+@import "../../mixins";
+
+.o_pill_underlined {
+  position: relative;
+  display: inline-block;
+  .o_pill_underline {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: $spacing_3;
+    border-radius: 99999px;
+    background-color: rgba($primary_1, 0.5);
+    width: 66%;
+  }
+}
