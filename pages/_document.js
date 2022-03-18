@@ -25,7 +25,7 @@ export default class MyDocument extends Document {
           {/* <MessengerScript /> */}
         </Head>
         <body>
-          {/* <MessengerContainer pageId="***REMOVED***"> */}
+          {/* <MessengerContainer pageId={process.env.MESSENGER_PAGE_ID}> */}
             <Main />
             <NextScript />
           {/* </MessengerContainer> */}

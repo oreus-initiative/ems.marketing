@@ -46,7 +46,7 @@ const MailChimp = ({ mailChimpAction, className }) => {
           >
             <input
               type="text"
-              name="b_***REMOVED***_***REMOVED***"
+              name={`b_${process.env.MAILCHIMP_USER_ID}_${process.env.MAILCHIMP_AUDIENCE_ID}`}
               tabIndex="-1"
             />
           </div>
